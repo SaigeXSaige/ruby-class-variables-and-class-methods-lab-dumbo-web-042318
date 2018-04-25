@@ -20,9 +20,20 @@ class Song
   end
   
   def self.artists
-    @@artists.count
+    @@artists
   end
   
+  def self.genres 
+    @@genres
+  end
+  
+  def self.genre_count
+    @@genres.count
+  end
+  
+  def self.artist_count
+    @@artists.count 
+  end
 end
 
 #binding.pry
