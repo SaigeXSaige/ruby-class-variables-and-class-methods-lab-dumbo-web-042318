@@ -44,6 +44,7 @@ class Song
       count_hash[genre] = @@genres.count {
         |x| x == genre
       }
+      count_hash
     end
   end
   
