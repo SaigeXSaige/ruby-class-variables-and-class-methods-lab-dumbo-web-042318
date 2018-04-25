@@ -3,7 +3,7 @@ require 'pry'
 class Song
   
   @@count = 0
-  @@songs_hash = {}
+  @@songs = []
   @@artists = []
   @@genres = []
   
@@ -12,7 +12,6 @@ class Song
     @@artists << @artist = artist
     @@genres << @genre = genre
     @@count += 1 
-    @@songs_hash[] = 
   end
   
   def name 
