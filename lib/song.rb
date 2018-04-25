@@ -57,6 +57,7 @@ class Song
     end
     count_hash
   end
+  
 end
 
 #binding.pry
