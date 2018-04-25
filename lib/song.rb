@@ -40,7 +40,7 @@ class Song
   
   def self.genre_count
     count_hash = {}
-    self.genres.map do |genre|  
+    self.genres.each do |genre|  
       count_hash[genre] = @@genres.count {
         |x| x == genre
       }
