@@ -50,8 +50,10 @@ class Song
   
   def self.artist_count
     count_hash = {}
-    self.artist_count.each do |artist|  
-      count_hash[artist] = @@artists.count 
+    self.artists.each do |artist|  
+      count_hash[artist] = @@artists.count {
+        |x| x == artist
+      }
     end
     count_hash
   end
