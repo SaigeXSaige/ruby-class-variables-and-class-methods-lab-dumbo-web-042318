@@ -3,7 +3,7 @@ require 'pry'
 class Song
   
   @@count = 0
-  @@songs = []
+  @@songs_hash = {}
   @@artists = []
   @@genres = []
   
@@ -12,7 +12,7 @@ class Song
     @@artists << @artist = artist
     @@genres << @genre = genre
     @@count += 1 
-    
+    @@songs_hash[] = 
   end
   
   def name 
@@ -40,7 +40,7 @@ class Song
   end
   
   def self.genre_count
-    @@genres.count
+    count_hash = {}
   end
   
   def self.artist_count
