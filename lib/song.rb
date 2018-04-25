@@ -44,8 +44,8 @@ class Song
       count_hash[genre] = @@genres.count {
         |x| x == genre
       }
-      count_hash
     end
+    count_hash
   end
   
   def self.artist_count
