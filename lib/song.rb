@@ -39,7 +39,7 @@ class Song
   end
   
   def self.genre_count
-    count_hash = {}
+    count_hash = {@genre=>1,}
   end
   
   def self.artist_count
